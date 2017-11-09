@@ -1,73 +1,96 @@
 golang
-let's go
+Should I go ?
 
 Muhammad Falak R Wani
-mfrw@iiitd.ac.in
+https://github.com/mfrw/letsgo
+falakreyaz@gmail.com
 
 
 * Agenda
 
-- A light hearted intro to *golang*
-- I already know python why should I switch
-- Some cool stuff
-- Who is the creator and who uses it.
+- Introduction to  go (golang -- searching)
+- Motivation.
+- Basics of go.
+- Some coding.
 
 
 * A tribute to the demo gods
 
 .play -edit src/hello.go
 
-* Why should I swtich
+* The boring way:
 
-- I already know python so why a new language
-- Cross compiling is as easy as native compiling
-- You Dont write complex makefiles, or have to bend you head for complex build systems
-- The tooling is awsome.
+- I already know *X* (python, java...) so,  why a new language ?
+- What problems does it solve ?
+- Java, Python ... are also platform independent.
+- class complicated implements something_insane
+- How many have seen any standard library code (libc, javalib, libstdc++ ...)?
+
+* tl;dr answers.
+
+* Easy (flat 1 hour) *
+
+* Profiling 
+
+* Tracing
+
+* Concurrency
+
+* Race-detection (bug hunting)
+
+* Testing 
+
+* Benchmarking
+
+* Toolchain
 
 * Who created it
 
-The creators of UNIX
+The creators of UNIX*
 
 - Ken Thompson (Turing award winner)
 - Rob Pike
 - Russ Cox
 
-Legend has it, Ken and Rob were waiting for a project to compile, they thougth of redesigning a language
-that was modern enough and could tackle the scale at google.
+Legend has it, Ken and Rob were waiting for a project to compile.
+
+PS: Due respect for Denis Ritche & Dough McIlory, nonetheless.
 
 * Structure of a Typical go program
 
 - package
 - imports
-- globla vars
+- global vars
 - funcs
-- func *main*
+- func *main* *
 
 * Is go Object oriented.
 
 - Although you can use it as an object oriented langugage, it is not.
 - It feels like one.
+- It features embedding. (latter)
 
 * Let me try to sell go
 
 - Cross compiling
-- Pretty loaded standard library (battries included)
-- All round development, Benchmarking and Testing bundled in the languge
-- Relatively leaner build times
-- Extensive tooling (more on that latter)
+- Extensive tooling.
+- Relatively leaner build times.
+- Pretty loaded standard library. (battries included)
+- All round development, Benchmarking and Testing bundled in the languge.
 
 * Some more
 
-- Looks and feels like Python
+- Easy and safe*
 - Statically Typed
 - Compiled
-- Simple
+- Encourages tinkering
 
 * What are use cases of go
 
-- Its typically used a systems langugage
+- Its typically used a systems language
 - People use for web dev too
 - Docker has been written in go.
+- Apache Kafka, Kubernetes .........
 
 * Lets start coding
 
@@ -103,6 +126,8 @@ There is just one looping construct *for*
 
 .play -edit src/slice2.go
 
+* Important Stuff
 
-
-
+- channels
+- goroutines
+- interfaces
